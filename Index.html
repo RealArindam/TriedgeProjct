@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Triedge Solutions Portal</title>
+        <meta name="viewport" width="device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="bootstrap-icons.css">
+        <style>
+            #firstDiv{
+                height:6px;
+            }
+            a{
+                text-decoration: none;
+            }
+            #belownav{
+                background-color: #064061;
+                height:45px;
+            }
+            #imgDiv{
+                background-image:url("personwave1.PNG");
+                background-size: cover;
+                height:235px; 
+            }
+            #paraExam{
+                color:#d63d38;
+                font-size:30px;
+            }
+            #belowimg{
+                border-bottom: 1px solid #dfd9d9;
+            }
+            .frsttbl{
+                border:2px solid #f2f2f2;
+                font-size:21px;
+                color:#d63d38;
+                padding:8px;
+                font-weight:500;
+                margin-top:5px;
+            }
+            #midcell{
+                width:180px;
+                padding:5px;
+            }
+            #sidecell1{
+                width:59px;
+                border-right: 2px solid #f2f2f2;
+            }
+            #sidecell2{
+                width:59px;
+                border-left: 2px solid #f2f2f2;
+            }
+            #frsttblrow{
+                height:62px;
+            }
+            #rightTbl{
+                text-align:center;
+                font-size:17px;
+                height:25px;
+                width:133px;
+                background-color: #f8f7f7;
+                border:1px solid #8e8b8b;
+            }
+            #cross{
+                color:#477692;
+                font-size:18px;
+                margin-left:10px;
+            }
+            .emptyCell{
+                width:43px;
+            }
+            footer{
+                background-color: #333333;
+            }
+            #Email{
+                width:298px;
+                height:54px;
+                padding:3px;
+                border:1px solid white;
+                border-top-left-radius:26px ;
+                border-bottom-left-radius:26px ;
+                outline:none;
+            }
+            #telegramIcon{
+                color:#666666;
+                background-color:white;
+                font-size:23px;
+                
+            }
+            #IconContainer{
+                background-color:white;
+                border:1px solid white;
+                border-top-right-radius:26px ;
+                border-bottom-right-radius:26px ;
+            }
+            #triedgeblack{
+                margin-left:80px;
+            }
+            .footFont{
+                font-size:13px;
+            }
+            .foottitleFont{
+                font-size: 16px;
+            }
+            li{
+                list-style:none;
+            }
+            #card{
+                width:465px;
+                height:341px;
+                border:1px solid #f3f3f3;
+                box-shadow: 2px 2px 15px rgba(0,0,0,0.1);
+
+            }
+            #card-header{
+                background-image: url("persnwave.PNG");
+                width:100%;
+                background-repeat: no-repeat;
+                height:245px;
+            }
+            #card-body{
+                padding-left:8px;
+                background-color:white;
+
+            }
+            #bookMark{
+                font-size:18px;
+                margin-top: 0px;
+                color:#ffc200;
+                margin-left:430px;
+            }
+            #star{
+                color:#365097;
+            }
+            #brochurebtn{
+                background-color: #d53d38;
+                color:white;
+                border:1px solid #d53d38;
+                width:163px;
+            }
+            #numBox{
+                padding:16px;
+                font-size:20px;
+                border:2px solid #e3e3e3;
+                box-shadow: 1px 1px 1px #e3e3e3;
+                font-weight:400;
+            }
+        </style>
+        <script>
+            function listClick(obj){
+                document.getElementById("frst").className="text-normal";
+                document.getElementById("secnd").className="text-normal";
+                document.getElementById("thrd").className="text-normal";
+                document.getElementById("fourth").className="text-normal";
+                document.getElementById(`${obj.id}`).className="text-danger";
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="row" id="firstDiv">
+                <div class="col-3" style="background-color:#d03a37"></div>
+                <div class="col-3" style="background-color:#0f5a78"></div>
+                <div class="col-3" style="background-color:#d03a37"></div>
+                <div class="col-3" style="background-color:#0f5a78"></div>
+            </div>
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="triedge.PNG" width="155" height="46">
+                    </a>
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                        <span class="bi bi-list"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" style="color:#d42c27"><span class="bi bi-house-fill"></span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" style="color:black;">
+                                    Our Services
+                                </a>
+                                <div class="dropdown-menu collapse">
+                                    <div class="dropdown-item">Our Services</div>
+                                    <div class="dropdown-item">Other Services</div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color:black">Sign Up/Sign In with<span class="fw-bold" style="color:#d03a37">TriEdge</span></a>
+                            </li>
+                            <li class="nav-item mt-1">
+                                <a class="navbar-brand" href="#" style="color:black;">
+                                    <span class="bi bi-cart-fill"></span>
+                                 </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header> 
+        <div id="belownav">
+
+        </div>
+        <div id="imgDiv">
+            <div style="height:50px;">
+
+            </div>
+            <div style="border:2px solid #ffffff; background-color:rgba(255,255,255,0.25);width:388px;height:58px;text-align: center;margin-left:902px;">
+                <p id="paraExam" class="fw-bold">LIST OF EXAMS IN INDIA</p>
+            </div>
+        </div>
+        <div id="belowimg">
+            <div class="d-flex justify-content-end p-2">
+                <div style="margin-right:41px;"><h4>Exam Info</h4></div>
+                <div style="margin-right:51px;"><h4>Preparation</h4></div>
+                <div class="me-1 d-flex"><h4 style="background-color:#ebebeb;color:#d03a37;padding:3px;">Resources</h4> <span class="bi bi-three-dots-vertical" style="font-size:21px;"></span></div>
+                <div class="me-2"><span class="bi-grid-3x3-gap-fill" style="font-size: 21px;"></span></div>
+            </div>
+        </div>
+        <div class="row container-fluid">
+            <div class="col-3">
+                <h4 style="font-size:24px;color:#d63d38;" class="mt-4 p-3">FILTER BY</h4>
+                <table width="288px">
+                    <tr>
+                        <td>
+                            <table cellspacing="0" cellpadding="3" border="1" class="frsttbl" width="288px">
+                                <tr id="frsttblrow">
+                                    <td id="sidecell1"><img src="house.png" width="40" height="40"></td>
+                                    <td id="midcell">State</td>
+                                    <td id="sidecell2"><span class="bi bi-chevron-right"></span></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table cellspacing="0" cellpadding="3" border="1" class="frsttbl" width="288px">
+                                <tr id="frsttblrow">
+                                    <td id="sidecell1"><img src="building.png" width="40" height="40"></td>
+                                    <td id="midcell">City</td>
+                                    <td id="sidecell2"><span class="bi bi-chevron-right"></span></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table cellspacing="0" cellpadding="3" border="1" class="frsttbl" width="288px">
+                                <tr id="frsttblrow">
+                                    <td id="sidecell1"><img src="readperson.png" width="40" height="40"></td>
+                                    <td id="midcell">Mode of Study</td>
+                                    <td id="sidecell2"><span class="bi bi-chevron-right"></span></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table cellspacing="0" cellpadding="3" border="1" class="frsttbl" width="288px">
+                                <tr id="frsttblrow">
+                                    <td id="sidecell1"><img src="ownership.png" width="40" height="40"></td>
+                                    <td id="midcell">Ownership</td>
+                                    <td id="sidecell2"><span class="bi bi-chevron-right"></span></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table cellspacing="0" cellpadding="3" border="1" class="frsttbl" width="288px">
+                                <tr id="frsttblrow">
+                                    <td id="sidecell1"><img src="hatview.png" width="40" height="40"></td>
+                                    <td id="midcell">Degree</td>
+                                    <td id="sidecell2"><span class="bi bi-chevron-right"></span></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table cellspacing="0" cellpadding="3" border="1" class="frsttbl" width="288px">
+                                <tr id="frsttblrow">
+                                    <td id="sidecell1"><img src="Fee.png" width="40" height="40"></td>
+                                    <td id="midcell">Fee</td>
+                                    <td id="sidecell2"><span class="bi bi-chevron-right"></span></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table cellspacing="0" cellpadding="3" border="1" class="frsttbl" width="288px">
+                                <tr id="frsttblrow">
+                                    <td id="sidecell1"><img src="feesecndlast.png" width="40" height="40"></td>
+                                    <td id="midcell">Branch</td>
+                                    <td id="sidecell2"><span class="bi bi-chevron-right"></span></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table cellspacing="0" cellpadding="3" border="1" class="frsttbl" width="288px">
+                                <tr id="frsttblrow">
+                                    <td id="sidecell1"><img src="feelast.png" width="40" height="40"></td>
+                                    <td id="midcell">Exam</td>
+                                    <td id="sidecell2"><span class="bi bi-chevron-down"></span></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <div class="mt-2 ps-3" style="font-size:17px;">
+                    <input type="checkbox" class="form-check-input"> CAT<br>
+                    <input type="checkbox" class="form-check-input"> MAT<br>
+                    <input type="checkbox" class="form-check-input"> CMAT<br>
+                    <input type="checkbox" class="form-check-input"> XAT<br>
+                    <input type="checkbox" class="form-check-input"> ATMA<br>
+                    <input type="checkbox" class="form-check-input"> GMAT
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="row mt-4" style="border:1px solid #8e8b8b;height:106px;">
+                    <div class="col-10">
+                        <table border="0" style="margin-top:15px;" width="725">
+                            <tr>
+                               <td>
+                                <table border="0">
+                                    <tr>
+                                        <td id="rightTbl">BE/B.Tech <span class="bi bi-x-lg" id="cross"></span></td>
+                                        <td class="emptyCell"></td>
+                                        <td id="rightTbl">BE/B.Tech <span class="bi bi-x-lg" id="cross"></span></td>
+                                        <td class="emptyCell"></td>
+                                        <td id="rightTbl">BE/B.Tech <span class="bi bi-x-lg" id="cross"></span></td>
+                                        <td class="emptyCell"></td>
+                                        <td id="rightTbl">BE/B.Tech <span class="bi bi-x-lg" id="cross"></span></td>
+                                    </tr>
+                               </table>
+                               </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table border="0" class="mt-2">
+                                        <tr>
+                                            <td id="rightTbl">Full Time <span class="bi bi-x-lg" id="cross"></span></td>
+                                            <td class="emptyCell"></td>
+                                            <td id="rightTbl">Full Time <span class="bi bi-x-lg" id="cross"></span></td>
+                                            <td class="emptyCell"></td>
+                                            <td id="rightTbl">Full Time <span class="bi bi-x-lg" id="cross"></span></td>
+                                            <td class="emptyCell"></td>
+                                            <td id="rightTbl">Full Time <span class="bi bi-x-lg" id="cross"></span></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-2">
+                       <div class="mt-3 text-end">
+                        <button class="btn-outline-secondary">Clear All</button>
+                       </div>
+                    </div>
+                </div>
+                <div class="mt-1">
+                    <div class="d-flex p-2 justify-content-end">
+                        <p style="font-size:19px;font-weight: 600;" class="me-3 mt-2">SORTED BY</p>
+                        <div>
+                            <div class="input-group">
+                                <div style="width:272px;height:53px;border:1px solid #aaaaaa;font-size:20px;" class="p-2">Popularity</div>
+                                <div class="dropdown down" style="width:54px;height:53px;">
+                                        <button class="btn-danger dropdown-toggle" data-bs-toggle="dropdown" style="width:54px;height:53px;"></button>
+                                    <div class="dropdown-menu collapse" style="width:324px;font-size:18px;">
+                                        <div class="dropdown-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div id="frst">
+                                                    Featured
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="frst" name="list" onclick="listClick(this)" class="form-check-input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div id="secnd">
+                                                    Popularity
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="secnd" name="list" onclick="listClick(this)" class="form-check-input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div id="thrd">
+                                                    Fee:Low to High
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="thrd" name="list" onclick="listClick(this)" class="form-check-input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div id="fourth">
+                                                    Fee:High to Low
+                                                </div>
+                                                <input type="radio" id="fourth" name="list" onclick="listClick(this)" class="form-check-input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4" style="height:1700px;">
+                    <div class="row" style="margin-bottom:40px;">
+                        <div class="col-5">
+                            <div id="card">
+                                <div id="card-header">
+                                    <span class="bi bi-bookmark-fill" id="bookMark"></span>
+                                    <div style="background-color:rgba(26,60,71,0.5);width:95%;height:77px;margin-top:137px;" class="ms-1">
+                                        <p style="font-size:27px;font-weight:400;color:#ffffff" class="text-center">ABC College of Enginering</p>
+                                        <div class="d-flex justify-content-evenly" style="color:#ffffff;font-size:18px;">
+                                            <div>Location</div>
+                                            <div>Established</div>
+                                            <div>Type</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-body">
+                                    <div class="row">
+                                        <div class="col-7" style="font-weight:500;font-size:18px;">
+                                            <div>
+                                                Total Engineering Courses : 
+                                            </div>
+                                            <div>
+                                                Avg CTC
+                                            </div>
+                                            <div>
+                                                Avg Fees
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <div>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star"></span>
+                                                <span>4/5</span>
+                                            </div>
+                                            <div style="font-size:12px;">
+                                                Based on 45 reviews
+                                            </div>
+                                            <div>
+                                                <button id="brochurebtn">Download Brochure</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5" style="margin-left:45px;">
+                            <div id="card">
+                                <div id="card-header">
+                                    <span class="bi bi-bookmark-fill" id="bookMark"></span>
+                                    <div style="background-color:rgba(26,60,71,0.5);width:95%;height:77px;margin-top:137px;" class="ms-1">
+                                        <p style="font-size:27px;font-weight:400;color:#ffffff" class="text-center">ABC College of Enginering</p>
+                                        <div class="d-flex justify-content-evenly" style="color:#ffffff;font-size:18px;">
+                                            <div>Location</div>
+                                            <div>Established</div>
+                                            <div>Type</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-body">
+                                    <div class="row">
+                                        <div class="col-7" style="font-weight:500;font-size:18px;">
+                                            <div>
+                                                Total Engineering Courses : 
+                                            </div>
+                                            <div>
+                                                Avg CTC
+                                            </div>
+                                            <div>
+                                                Avg Fees
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <div>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star"></span>
+                                                <span>4/5</span>
+                                            </div>
+                                            <div style="font-size:12px;">
+                                                Based on 45 reviews
+                                            </div>
+                                            <div>
+                                                <button id="brochurebtn">Download Brochure</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-bottom:40px;">
+                        <div class="col-5">
+                            <div id="card">
+                                <div id="card-header">
+                                    <span class="bi bi-bookmark-fill" id="bookMark"></span>
+                                    <div style="background-color:rgba(26,60,71,0.5);width:95%;height:77px;margin-top:137px;" class="ms-1">
+                                        <p style="font-size:27px;font-weight:400;color:#ffffff" class="text-center">ABC College of Enginering</p>
+                                        <div class="d-flex justify-content-evenly" style="color:#ffffff;font-size:18px;">
+                                            <div>Location</div>
+                                            <div>Established</div>
+                                            <div>Type</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-body">
+                                    <div class="row">
+                                        <div class="col-7" style="font-weight:500;font-size:18px;">
+                                            <div>
+                                                Total Engineering Courses : 
+                                            </div>
+                                            <div>
+                                                Avg CTC
+                                            </div>
+                                            <div>
+                                                Avg Fees
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <div>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star"></span>
+                                                <span>4/5</span>
+                                            </div>
+                                            <div style="font-size:12px;">
+                                                Based on 45 reviews
+                                            </div>
+                                            <div>
+                                                <button id="brochurebtn">Download Brochure</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5" style="margin-left:45px;">
+                            <div id="card">
+                                <div id="card-header">
+                                    <span class="bi bi-bookmark-fill" id="bookMark"></span>
+                                    <div style="background-color:rgba(26,60,71,0.5);width:95%;height:77px;margin-top:137px;" class="ms-1">
+                                        <p style="font-size:27px;font-weight:400;color:#ffffff" class="text-center">ABC College of Enginering</p>
+                                        <div class="d-flex justify-content-evenly" style="color:#ffffff;font-size:18px;">
+                                            <div>Location</div>
+                                            <div>Established</div>
+                                            <div>Type</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-body">
+                                    <div class="row">
+                                        <div class="col-7" style="font-weight:500;font-size:18px;">
+                                            <div>
+                                                Total Engineering Courses : 
+                                            </div>
+                                            <div>
+                                                Avg CTC
+                                            </div>
+                                            <div>
+                                                Avg Fees
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <div>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star"></span>
+                                                <span>4/5</span>
+                                            </div>
+                                            <div style="font-size:12px;">
+                                                Based on 45 reviews
+                                            </div>
+                                            <div>
+                                                <button id="brochurebtn">Download Brochure</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-bottom:40px;">
+                        <div class="col-5">
+                            <div id="card">
+                                <div id="card-header">
+                                    <span class="bi bi-bookmark-fill" id="bookMark"></span>
+                                    <div style="background-color:rgba(26,60,71,0.5);width:95%;height:77px;margin-top:137px;" class="ms-1">
+                                        <p style="font-size:27px;font-weight:400;color:#ffffff" class="text-center">ABC College of Enginering</p>
+                                        <div class="d-flex justify-content-evenly" style="color:#ffffff;font-size:18px;">
+                                            <div>Location</div>
+                                            <div>Established</div>
+                                            <div>Type</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-body">
+                                    <div class="row">
+                                        <div class="col-7" style="font-weight:500;font-size:18px;">
+                                            <div>
+                                                Total Engineering Courses : 
+                                            </div>
+                                            <div>
+                                                Avg CTC
+                                            </div>
+                                            <div>
+                                                Avg Fees
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <div>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star"></span>
+                                                <span>4/5</span>
+                                            </div>
+                                            <div style="font-size:12px;">
+                                                Based on 45 reviews
+                                            </div>
+                                            <div>
+                                                <button id="brochurebtn">Download Brochure</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5" style="margin-left:45px;">
+                            <div id="card">
+                                <div id="card-header">
+                                    <span class="bi bi-bookmark-fill" id="bookMark"></span>
+                                    <div style="background-color:rgba(26,60,71,0.5);width:95%;height:77px;margin-top:137px;" class="ms-1">
+                                        <p style="font-size:27px;font-weight:400;color:#ffffff" class="text-center">ABC College of Enginering</p>
+                                        <div class="d-flex justify-content-evenly" style="color:#ffffff;font-size:18px;">
+                                            <div>Location</div>
+                                            <div>Established</div>
+                                            <div>Type</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-body">
+                                    <div class="row">
+                                        <div class="col-7" style="font-weight:500;font-size:18px;">
+                                            <div>
+                                                Total Engineering Courses : 
+                                            </div>
+                                            <div>
+                                                Avg CTC
+                                            </div>
+                                            <div>
+                                                Avg Fees
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <div>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star"></span>
+                                                <span>4/5</span>
+                                            </div>
+                                            <div style="font-size:12px;">
+                                                Based on 45 reviews
+                                            </div>
+                                            <div>
+                                                <button id="brochurebtn">Download Brochure</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-bottom:40px;">
+                        <div class="col-5">
+                            <div id="card">
+                                <div id="card-header">
+                                    <span class="bi bi-bookmark-fill" id="bookMark"></span>
+                                    <div style="background-color:rgba(26,60,71,0.5);width:95%;height:77px;margin-top:137px;" class="ms-1">
+                                        <p style="font-size:27px;font-weight:400;color:#ffffff" class="text-center">ABC College of Enginering</p>
+                                        <div class="d-flex justify-content-evenly" style="color:#ffffff;font-size:18px;">
+                                            <div>Location</div>
+                                            <div>Established</div>
+                                            <div>Type</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-body">
+                                    <div class="row">
+                                        <div class="col-7" style="font-weight:500;font-size:18px;">
+                                            <div>
+                                                Total Engineering Courses : 
+                                            </div>
+                                            <div>
+                                                Avg CTC
+                                            </div>
+                                            <div>
+                                                Avg Fees
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <div>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star"></span>
+                                                <span>4/5</span>
+                                            </div>
+                                            <div style="font-size:12px;">
+                                                Based on 45 reviews
+                                            </div>
+                                            <div>
+                                                <button id="brochurebtn">Download Brochure</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5" style="margin-left:45px;">
+                            <div id="card">
+                                <div id="card-header">
+                                    <span class="bi bi-bookmark-fill" id="bookMark"></span>
+                                    <div style="background-color:rgba(26,60,71,0.5);width:95%;height:77px;margin-top:137px;" class="ms-1">
+                                        <p style="font-size:27px;font-weight:400;color:#ffffff" class="text-center">ABC College of Enginering</p>
+                                        <div class="d-flex justify-content-evenly" style="color:#ffffff;font-size:18px;">
+                                            <div>Location</div>
+                                            <div>Established</div>
+                                            <div>Type</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-body">
+                                    <div class="row">
+                                        <div class="col-7" style="font-weight:500;font-size:18px;">
+                                            <div>
+                                                Total Engineering Courses : 
+                                            </div>
+                                            <div>
+                                                Avg CTC
+                                            </div>
+                                            <div>
+                                                Avg Fees
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <div>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star-fill" id="star"></span>
+                                                <span class="bi bi-star"></span>
+                                                <span>4/5</span>
+                                            </div>
+                                            <div style="font-size:12px;">
+                                                Based on 45 reviews
+                                            </div>
+                                            <div>
+                                                <button id="brochurebtn">Download Brochure</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top:67px;margin-left:180px;">
+                        <span id="numBox"><span class="bi bi-chevron-left"></span></span>
+                        <span id="numBox">1</span>
+                        <span id="numBox">2</span>
+                        <span id="numBox">3</span>
+                        <span id="numBox">4</span>
+                        <span id="numBox">5</span>
+                        <span id="numBox"><span class="bi bi-chevron-right"></span></span>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>   
+        <footer class="mt-3">
+            <div class="row" style="border-bottom:2px solid #222222;height:148px;">
+                <div class="col-4 text-light" style="margin-top:46px;">
+                    <h4 style="font-size:17px;margin-left:85px;">BE THE FIRST TO KNOW</h4>
+                    <div>
+                        <p class="footFont" style="margin-left:85px;">Get all the latest information on  Triedge Services, Events, Jobs
+                            and Fairs. Sign up for our newsletter today.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="input-group" style="margin-top:46px;">
+                        <input type="email" placeholder="      Email Address" id="Email">
+                        <div class="input-group-text" id="IconContainer">
+                            <a href="https://www.triedge.in"><span id="telegramIcon" class="bi bi-telegram"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                   <img src="stayconnected.png" width="330" height="100" style="margin-top:40px;">
+                </div>
+            </div>
+            <div class="row text-light" style="margin-top:53px;">
+                <div class="col-4">
+                    <img src="triedgeblack.PNG" width="195" height="64" id="triedgeblack">
+                    <div class="footFont">
+                         <p style="margin-left:85px;">
+                            Your one-stop career platform to find Jobs, Internships,
+                            Professional Trainings, Projects, and Volunteering
+                            Opportunities.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-3">
+                        <div>
+                            <h4 class="foottitleFont">Quick Links</h4>
+                        </div>
+                        <div class="footFont">
+                            <ol>
+                                <li>Home</li>
+                                <li>About Us</li>
+                                <li>Triedge Partners</li>
+                                <li>Contact Us</li>
+                                <li>Terms & Conditions</li>
+                                <li>Privacy Policy</li>
+                                <li>Sitemap</li>
+                            </ol>
+                        </div>
+                </div>
+                <div class="col-3">
+                    <div>
+                        <h4 class="foottitleFont">OUR SERVICES</h4>
+                    </div>
+                    <div class="footFont">
+                        <ol>
+                            <li>Fresher Jobs</li>
+                            <li>InternEdge - Internships & Projects</li>
+                            <li>Resume Edge - Resume Writing Services</li>
+                            <li>Readers Galleria - Curated Library</li>
+                            <li>Trideus - Campus Ambassadors</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div>
+                        <h4 class="foottitleFont">triedge Events</h4>
+                    </div>
+                    <ol class="footFont">
+                        <li>Triedge Events</li>
+                        <li>Jobs & Internship Fair 2019</li>
+                    </ol>
+                </div>
+            </div>
+            <div style="background-color:#222222;text-align:center;color:#ffffff;font-size:15px;" class="p-2">
+                <p class="mt-3">&copy; Copyright 2019 | All Rights Reserved by TRIEDGE Solutions Pvt. Ltd.</p>
+            </div>
+        </footer>
+        <script src="bootstrap.bundle.js"></script>
+        <script src="jquery.js"></script>
+    </body>
+</html>
